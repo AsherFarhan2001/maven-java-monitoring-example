@@ -21,8 +21,8 @@ jobs:
         password: ${{ secrets.DOCKERHUB_ACCESS_TOKEN }}
 
     - name: Build the Docker image
-      run: docker build -t asherfarhan/python-auth-example .
+      run: docker build -t asherfarhan/maven-java-monitoring-example .
 
     - name: Push the Docker image
-      run: docker push asherfarhan/python-auth-example
+      run: docker push asherfarhan/maven-java-monitoring-example
 
